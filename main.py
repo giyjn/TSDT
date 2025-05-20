@@ -21,3 +21,4 @@ with chrome_driver() as browser:
     assert 'django' in body.text.lower()
     print("测试成功！")
     input("按回车键退出...")
+
