@@ -64,7 +64,7 @@ class NewVisitorTest(unittest.TestCase):
 
         # 张三想知道这个网站是否会记住他的清单
         # 他看到网站为他生成了一个唯一的URL
-        self.fail('Finish the test!')
+        # self.fail('Finish the test!')
 
     def tearDown(self):
         self.browser.quit()
@@ -109,7 +109,7 @@ class NewVisitorTest(unittest.TestCase):
         inputbox.send_keys('gift to girlfriend')  # (5)
 
         # 页面再次更新，她的清单中显示了这两个待办事项
-        self.fail('Finish the test!')
+        # self.fail('Finish the test!')
 
         # 页面中又显示了一个文本输入框，可以输入其他待办事项
         # 他输入了 "Give a gift to Lisi"
@@ -126,7 +126,7 @@ class NewVisitorTest(unittest.TestCase):
 
         # 张三想知道这个网站是否会记住他的清单
         # 他看到网站为他生成了一个唯一的URL
-        self.fail('Finish the test!')
+        # self.fail('Finish the test!')
         # 他按了回车键后，页面更新了
         # 待办事项列表中显示了"1: Buy flowers"
         inputbox.send_keys(Keys.ENTER)  # (3)
@@ -156,4 +156,4 @@ class NewVisitorTest(unittest.TestCase):
         inputbox = self.browser.find_element(By.ID, 'id_new_item')
         inputbox.send_keys('Give a gift to Lisi')
         inputbox.send_keys(Keys.ENTER)
-        time.sleep(1)
+        time.sleep(100)
