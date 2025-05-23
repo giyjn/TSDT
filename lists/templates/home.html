@@ -1,3 +1,4 @@
+{% extends 'base.html' %}
 <!--<html>-->
 <!--    <head>-->
 <!--        <title>To-Do lists</title>-->
@@ -18,14 +19,21 @@
 
 
 <!--</html>-->
-<html>
-<head><title>To-Do lists</title></head>
-<body>
-    <h1>Welcome to To-Do App</h1>
-    <form method="POST" action="/lists/new">
-        {% csrf_token %}
-        <input name="item_text" id="id_new_item" placeholder="Enter a to-do item" />
-        <button type="submit">Start</button>
-    </form>
-</body>
-</html>
+<!--<html>-->
+<!--<head><title>To-Do lists</title></head>-->
+<!--<body>-->
+<!--    <h1>Welcome to To-Do App</h1>-->
+<!--    <form method="POST" action="/lists/new">-->
+<!--    <p style="text-align: center;">-->
+<!--        <input name="item_text" id="id_new_item" placeholder="Enter a to-do item" />-->
+<!--    </p>-->
+<!--    {% csrf_token %}-->
+<!--</form>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+
+{% block header_text %}Start a new To-Do list{% endblock %}
+{% block form_action %}/lists/new{% endblock %}
