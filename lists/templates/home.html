@@ -1,20 +1,31 @@
+<!--<html>-->
+<!--    <head>-->
+<!--        <title>To-Do lists</title>-->
+<!--    </head>-->
+<!--   <body>-->
+<!--    <h1>Start a new To-Do</h1>-->
+<!--    <form method="POST" action="/">-->
+<!--        <input name="item_text" id="id_new_item" placeholder="Enter a to-do item" />-->
+<!--        {% csrf_token %}-->
+<!--    </form>-->
+<!--</body>-->
+
+
+
+<!--</body>-->
+
+
+
+
+<!--</html>-->
 <html>
-    <head>
-        <title>To-Do lists</title>
-    </head>
-   <body>
-    <h1>Start a new To-Do</h1>
-    <form method="POST" action="/">
-        <input name="item_text" id="id_new_item" placeholder="Enter a to-do item" />
+<head><title>To-Do lists</title></head>
+<body>
+    <h1>Welcome to To-Do App</h1>
+    <form method="POST" action="/lists/new">
         {% csrf_token %}
+        <input name="item_text" id="id_new_item" placeholder="Enter a to-do item" />
+        <button type="submit">Start</button>
     </form>
 </body>
-
-
-
-</body>
-
-
-
-
 </html>
